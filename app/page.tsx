@@ -24,6 +24,7 @@ export default async function Home() {
   const homeData = await getHomeData(today.format("YYYY-MM-DD"));
   
   if (homeData.status !== 200) redirect("/auth");
+  console.log(homeData);
 
   const { todayWorkoutDay, workoutStreak, consistencyByDay } = homeData.data;
   const userName = session.data.user.name?.split(" ")[0] ?? "";

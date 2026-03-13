@@ -5,7 +5,7 @@
  * API para o bootcamp de treinos do FSC
  * OpenAPI spec version: 1.0.0
  */
-import { customFetch } from "../../../../gabarito/app/_lib/fetch";
+import { customFetch } from "../../fetch";
 export type GetHomeData200TodayWorkoutDayWeekDay =
   (typeof GetHomeData200TodayWorkoutDayWeekDay)[keyof typeof GetHomeData200TodayWorkoutDayWeekDay];
 
